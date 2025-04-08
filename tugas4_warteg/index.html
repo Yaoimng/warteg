@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warteg Sederhana - Traditional Indonesian Food</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem;
+        }
+
+        nav h1 {
+            color: #FF6B35;
+            font-size: 2rem;
+            display: inline-block;
+        }
+
+        nav ul {
+            float: right;
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FF6B35;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #home {
+            text-align: center;
+            padding-top: 8rem;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1562607635-4608ff48a859?q=80&w=1000') center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #home h2 {
+            font-size: 3.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        #home p {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        #home a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #FF6B35;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #home a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+        }
+
+        #menu {
+            background: #f9f9f9;
+        }
+
+        #menu h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        #menu div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        article {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+        }
+
+        article h3 {
+            color: #FF6B35;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        article p:last-child {
+            font-weight: bold;
+            color: #FF6B35;
+            margin-top: 1rem;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            color: #666;
+        }
+
+        #contact {
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        #contact div {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact h3 {
+            color: #FF6B35;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                float: none;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 1rem 0;
+            }
+
+            nav h1 {
+                display: block;
+                text-align: center;
+            }
+
+            #home h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>Warteg Sederhana</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h2>Welcome to Warteg Sederhana</h2>
+        <p>Authentic Indonesian home-style cooking</p>
+        <a href="#menu">View Menu</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div>
+            <article>
+                <h3>Nasi Goreng</h3>
+                <p>Indonesian fried rice with vegetables and choice of protein</p>
+                <p>Rp 25.000</p>
+            </article>
+
+            <article>
+                <h3>Ayam Goreng</h3>
+                <p>Crispy fried chicken with special seasoning</p>
+                <p>Rp 20.000</p>
+            </article>
+
+            <article>
+                <h3>Sayur Asem</h3>
+                <p>Traditional vegetable soup with tamarind</p>
+                <p>Rp 15.000</p>
+            </article>
+
+            <article>
+                <h3>Tempe Goreng</h3>
+                <p>Deep fried fermented soybean cake</p>
+                <p>Rp 5.000</p>
+            </article>
+
+            <article>
+                <h3>Tahu Goreng</h3>
+                <p>Deep fried tofu</p>
+                <p>Rp 5.000</p>
+            </article>
+
+            <article>
+                <h3>Telur Dadar</h3>
+                <p>Indonesian style omelet</p>
+                <p>Rp 8.000</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Warteg Sederhana has been serving authentic Indonesian cuisine since 1995. 
+            Our recipes have been passed down through generations, bringing you the true 
+            taste of Indonesian home cooking.
+        </p>
+        <p>
+            We pride ourselves on using fresh, locally-sourced ingredients and 
+            traditional cooking methods to ensure the best quality food for our customers.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div>
+            <h3>Location</h3>
+            <p>Jl. Pasar Baru No. 123<br>Jakarta Pusat, Indonesia</p>
+
+            <h3>Hours</h3>
+            <p>Monday - Sunday: 6:00 AM - 10:00 PM</p>
+
+            <h3>Phone</h3>
+            <p>+62 21 1234 5678</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Warteg Sederhana. All rights reserved.</p>
+    </footer>
+</body>
+</html>
